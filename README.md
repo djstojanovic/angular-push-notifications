@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.5.
 
+## Reset notifications
+Go to browser settings and remove subscription.
+chrome://settings/content/notifications  (http://127.0.0.1:8080/)
+
 ## Development server
 Node: 10.16.3
 
