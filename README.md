@@ -14,6 +14,13 @@ Start development server with one of the commands:
 
 2. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Testing notifications
+We need app build with production flag to enable service workers.
+1. Run  `npm run build`
+2. Run  `http-server dist` (if you don't have http-server run `npm add -g http-server`)
+3. Open browser in url given from terminal and test subscription
+
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
