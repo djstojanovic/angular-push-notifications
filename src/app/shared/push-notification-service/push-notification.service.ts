@@ -1,20 +1,22 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {Config} from '../../config/config';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PushNotificationService {
 
+  subscriptionApiURL = 'http://localhost:3000/subscription';
+  sendApiURL = 'http://localhost:3000/sendNotification';
+
   constructor(private http: HttpClient) { }
 
   sendSubscriptionToTheServer(subscription: PushSubscription) {
-    return this.http.post(Config.subscriptionApiURL, subscription);
+    return this.http.post(this.subscriptionApiURL, subscription);
   }
 
   sendNotification() {
-    return this.http.post(Config.sendApiURL, {});
+    return this.http.post(this.sendApiURL, {});
   }
 
 }
