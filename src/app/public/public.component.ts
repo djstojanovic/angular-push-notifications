@@ -8,10 +8,9 @@ import {Content} from '../config/content';
 })
 export class PublicComponent implements OnInit {
 
-  title: string;
+  icon: string = "/assets/icons/logo.png"
 
   constructor() {
-    this.title = Content.public.title;
   }
 
   ngOnInit(): void {
