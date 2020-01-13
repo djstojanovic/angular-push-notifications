@@ -10,6 +10,7 @@ import {SubscriptionComponent} from './public/subscription/subscription.componen
 import {PublicComponent} from './public/public.component';
 import {ProtectedComponent} from './protected/protected.component';
 import {PublishComponent} from './protected/publish/publish.component';
+import { NewsComponent } from './public/news/news.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {PublishComponent} from './protected/publish/publish.component';
     SubscriptionComponent,
     PublicComponent,
     ProtectedComponent,
-    PublishComponent
+    PublishComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
