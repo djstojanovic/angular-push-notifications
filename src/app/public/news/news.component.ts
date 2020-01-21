@@ -9,25 +9,30 @@ export class NewsComponent implements OnInit {
 
   news = [
     {
-      title: "News1",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a porta ipsum. Integer sollicitudin, ligula eu interdum hendrerit, lectus ex bibendum urna, ac posuere mauris nulla et tortor. Pellentesque quis tristique elit. In venenatis malesuada orci, et egestas ipsum pulvinar in. Quisque posuere consectetur justo, in feugiat dui scelerisque et."
+      title: "The secret to fruitful collaboration",
+      date: "January 16th, 2020",
+      src: "./assets/images/News_1.jpg"
+      },
+    {
+      title: "Hack9 - It's not about the prize, it's about the pride",
+      date: "January 7th, 2020",
+      src: "./assets/images/News_2.jpg"
+       },
+    {
+      title: "Tech Doc Festival: Levi9 celebrates 15 year anniversary",
+      date: "December 16th, 2019",
+      src: "./assets/images/News_3.jpg"
     },
     {
-      title: "News2",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a porta ipsum. Integer sollicitudin, ligula eu interdum hendrerit, lectus ex bibendum urna, ac posuere mauris nulla et tortor. Pellentesque quis tristique elit. In venenatis malesuada orci, et egestas ipsum pulvinar in. Quisque posuere consectetur justo, in feugiat dui scelerisque et."
-    },
+      title: "Disruptieve werkijze op termijn onvermijdelijk",
+      date: "December 4th, 2019",
+      src: "./assets/images/News_4.jpg"
+       },
     {
-      title: "News3",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a porta ipsum. Integer sollicitudin, ligula eu interdum hendrerit, lectus ex bibendum urna, ac posuere mauris nulla et tortor. Pellentesque quis tristique elit. In venenatis malesuada orci, et egestas ipsum pulvinar in. Quisque posuere consectetur justo, in feugiat dui scelerisque et."
-    },
-    {
-      title: "News4",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a porta ipsum. Integer sollicitudin, ligula eu interdum hendrerit, lectus ex bibendum urna, ac posuere mauris nulla et tortor. Pellentesque quis tristique elit. In venenatis malesuada orci, et egestas ipsum pulvinar in. Quisque posuere consectetur justo, in feugiat dui scelerisque et."
-    },
-    {
-      title: "News5",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a porta ipsum. Integer sollicitudin, ligula eu interdum hendrerit, lectus ex bibendum urna, ac posuere mauris nulla et tortor. Pellentesque quis tristique elit. In venenatis malesuada orci, et egestas ipsum pulvinar in. Quisque posuere consectetur justo, in feugiat dui scelerisque et."
-    }
+      title: "Games, workshops and trivia nights: Cybersecurity is fun.",
+      date: "November 21th, 2019",
+      src: "./assets/images/News_5.jpg"
+       }
   ]
   constructor() { }
 
