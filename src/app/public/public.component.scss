@@ -1,34 +1,28 @@
 header {
-  padding: 10px 0 0;
-  overflow: auto;
-  height: 250px;
+    padding: 10px 0 0;
+    overflow: auto;
 }
 
 h1 {
-  margin: 0;
-}
+    margin: 0;
+ }
 
-ul {
-  list-style: none;
-  float: right;
+ ul {
+    list-style: none;
+    float: right;
+    
+    li {
+        padding: 18px;
+        display: inline-block;
 
-  li {
-    padding: 18px;
-    display: inline-block;
-
-    span {
-      display: inline-block;
-      border-bottom: 2px solid white;
+        span {
+            display: inline-block;
+            border-bottom: 2px solid white;
+        }
     }
-  }
-}
+ }
 
-img {
-  height: 69px;
-  float: left;
-}
-
-app-subscription {
-  position: relative;
-  top: 120px;
-}
+ img {
+     height: 69px;
+     float: left;
+ }
