@@ -10,6 +10,8 @@ import {SubscriptionComponent} from './public/subscription/subscription.componen
 import {PublicComponent} from './public/public.component';
 import {ProtectedComponent} from './protected/protected.component';
 import {PublishComponent} from './protected/publish/publish.component';
+import {SubscribersComponent} from './protected/subscribers/subscribers.component';
+import {SubscribersService} from './protected/subscribers/subscribers.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import {PublishComponent} from './protected/publish/publish.component';
     SubscriptionComponent,
     PublicComponent,
     ProtectedComponent,
-    PublishComponent
+    PublishComponent,
+    SubscribersComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,7 @@ import {PublishComponent} from './protected/publish/publish.component';
     HttpClientModule,
     ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production})
   ],
-  providers: [PushNotificationService],
+  providers: [PushNotificationService, SubscribersService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
