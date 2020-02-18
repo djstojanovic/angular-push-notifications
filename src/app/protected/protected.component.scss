@@ -1,0 +1,16 @@
+header{
+    height: 80px;
+    border-bottom: 1px solid #ffffff;
+    h1{
+        float: left;
+    }
+    .btn-logout{
+        display: block;
+        float: right;
+        width: 90px;
+        margin-top: 30px;
+        background-color: transparent;
+        color: #ffffff;
+        text-align: center;
+    }
+}

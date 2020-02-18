@@ -1,1 +1,12 @@
-<button (click)="publish()">{{publishLabel}}</button>
+<button (click)="publish()" class="btn">{{publishLabel}}</button>
+
+<header>
+    <h2>Subscribers</h2>
+    <span class="total">Total: {{subscribers.length}}</span>
+</header>
+
+<ul class="list small">
+    <li *ngFor="let subscriber of subscribers">
+        {{subscriber.endpoint}}
+    </li>
+</ul>

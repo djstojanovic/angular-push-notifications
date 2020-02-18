@@ -10,12 +10,16 @@ import {Content} from '../../config/content';
 export class PublishComponent implements OnInit {
 
   publishLabel: string;
+  subscribers: any[] = [];
 
   constructor(private pushService: PushNotificationService) {
     this.publishLabel = Content.protected.publish;
   }
 
   ngOnInit() {
+    this.pushService.getSubscribers().subscribe((res) => {
+      this.subscribers = res;
+    })
   }
 
   publish() {
