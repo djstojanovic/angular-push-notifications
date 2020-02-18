@@ -1,11 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import { TimelineLite } from 'gsap';
 
 @Component({
   selector: 'app-news',
   templateUrl: './news.component.html',
   styleUrls: ['./news.component.scss']
 })
-export class NewsComponent implements OnInit {
+export class NewsComponent implements OnInit, AfterViewInit {
+
+  @ViewChild('newsEl', {static: true}) newsEl:ElementRef;
+  tl: any;
 
   news = [
     {
@@ -34,9 +38,25 @@ export class NewsComponent implements OnInit {
       src: "./assets/images/News_5.jpg"
        }
   ]
-  constructor() { }
+  constructor() {
+    this.tl = new TimelineLite();
+  }
 
   ngOnInit() {
+  }
+
+  ngAfterViewInit(){
+    this.animateIn();
+  }
+
+  animateIn(){
+    const newsElms = this.newsEl.nativeElement.querySelectorAll('.news');
+    this.tl.set(newsElms, {autoAlpha: 0, y: 20});
+    this.tl.staggerTo(newsElms, 0.6, {
+      autoAlpha: 1, 
+      y: 0,
+      stagger: { amount: 0.6}
+    });
   }
 
 }
