@@ -1,3 +1,3 @@
 export const Config = {
-  publicKey: 'BLGXzcVFmRoI3mVbJ-qyQqHwCb0B4iEC5aSlXTRnfs5ycfSevlumjz6VYCIH6r0cwRkI74lU-d9E9l2gOJegpKgg'
+  publicKey: 'BN4lAqZ4viLUkjxBcOfaZR6bkKQrUDqnZWHJMHwFSohomL-Q8qkmxT3sz58Kdei9aKhkoyYteipENqhXBUAdEYU'
 };
