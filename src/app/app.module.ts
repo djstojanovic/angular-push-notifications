@@ -6,7 +6,6 @@ import {ServiceWorkerModule} from '@angular/service-worker';
 import {environment} from '../environments/environment';
 import {PushNotificationService} from './shared/push-notification-service/push-notification.service';
 import {HttpClientModule} from '@angular/common/http';
-import {SubscriptionComponent} from './public/subscription/subscription.component';
 import {PublicComponent} from './public/public.component';
 import {ProtectedComponent} from './protected/protected.component';
 import {PublishComponent} from './protected/publish/publish.component';
@@ -15,7 +14,6 @@ import { NewsComponent } from './public/news/news.component';
 @NgModule({
   declarations: [
     AppComponent,
-    SubscriptionComponent,
     PublicComponent,
     ProtectedComponent,
     PublishComponent,
