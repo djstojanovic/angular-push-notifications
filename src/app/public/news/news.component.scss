@@ -1,3 +1,6 @@
+$breakpoint-tablet: 1100px;
+$breakpoint-mobile: 640px;
+
 .news {
   display: inline-block;
   height: 350px;
@@ -9,9 +12,20 @@
   color: #1d4087;
   border-radius: 3px;
   opacity: 1;
+  @media (max-width: $breakpoint-tablet) {
+    width: 46%;
+  }
+  @media (max-width: $breakpoint-mobile) {
+    width: 96%;
+  }
+  
 
   .image {
     height: 50%;
+    @media (max-width: $breakpoint-tablet) {
+      height: auto;
+    }
+    
     img {
       width: 100%;
     }
