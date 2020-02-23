@@ -31,4 +31,45 @@ header{
         float: right;
         line-height: 30px;
     }
+    .subscribers{
+        float: right;
+    }
+}
+
+form{
+    margin: 20px 0;
+    padding: 20px 0;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    font-size: 13px;
+    .form-group{
+        display: block;
+        float: left;
+        width: 33%;
+        label{
+            display: block;
+        }
+        input[type="text"]{
+            min-width: 150px;
+            padding: 5px;
+            background-color: transparent;
+            color: #ffffff;
+            outline: none;
+            border: 1px solid #ffffff;
+            transition: background-color 0.1s;
+            &:focus{
+                background-color: rgba(255,255,255,0.3);
+            }
+        }
+    }
+    .form-btns{
+        display: block;
+        float: none;
+        clear: both;
+        padding: 20px 0;
+        button{
+            margin-right: 5px;
+            padding: 10px;
+        }
+    }
 }

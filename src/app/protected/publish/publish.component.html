@@ -1,12 +1,30 @@
-<button (click)="publish()" class="btn">{{publishLabel}}</button>
-
 <header>
-    <h2>Subscribers</h2>
-    <span class="total">Total: {{subscribers.length}}</span>
+    <h2>News</h2>
+    <h2 class="subscribers">Subscribers: {{subscribers.length}}</h2>
 </header>
 
-<ul class="list small">
-    <li *ngFor="let subscriber of subscribers">
-        {{subscriber.endpoint}}
+<form>
+    <h2>Add news</h2>
+    <div class="form-group">
+        <label>Title</label>
+        <input [(ngModel)]="newNews.title" type="text" name="title"/>
+    </div>
+    <div class="form-group">
+        <label>Date</label>
+        <input [(ngModel)]="newNews.date" type="text" name="date"/>
+    </div>
+    <div class="form-group">
+        <label>Image</label>
+        <input [(ngModel)]="newNews.src" type="text" name="src"/>
+    </div>
+    <div class="form-btns">
+        <button (click)="addNews()" class="btn">Add news</button>
+        <button (click)="publish()" class="btn">{{publishLabel}}</button>
+    </div>
+</form>
+
+<ul class="list">
+    <li *ngFor="let newsItem of news">
+        {{newsItem.title}}
     </li>
 </ul>

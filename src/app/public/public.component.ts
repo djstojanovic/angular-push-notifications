@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {Content} from '../config/content';
 import { SwPush } from '@angular/service-worker';
 import { PushNotificationService } from '../shared/push-notification-service/push-notification.service';
 import { Config } from '../config/config';
@@ -11,7 +10,7 @@ import { Config } from '../config/config';
 })
 export class PublicComponent implements OnInit {
 
-  icon: string = "/assets/icons/logo.png"
+  icon: string = "/assets/icons/logo.png";
 
   constructor(private swPush: SwPush,
     private pushService: PushNotificationService) {
