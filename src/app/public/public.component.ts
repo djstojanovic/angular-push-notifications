@@ -24,7 +24,7 @@ export class PublicComponent implements OnInit {
       }).then(subscription => this.handleSubscription(subscription))
         .catch(error => this.handleSubscriptionError(error));
     } else {
-      alert('Push notifications not available');
+      console.error('Push notifications not available');
     }
   }
 

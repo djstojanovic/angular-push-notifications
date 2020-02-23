@@ -9,7 +9,6 @@ import { News } from './news.model';
 export class NewsService {
 
     constructor(private http: HttpClient){
-
     }
 
     public getNews(){

@@ -28,9 +28,6 @@ export class NewsComponent implements OnInit, AfterViewInit {
   ngOnInit() {
     this.newsService.getNews().subscribe((res: any[]) => {
       this.news = res;
-      setTimeout(() => {
-        this.animateIn();
-      }, 1000)
     });
   }
 
@@ -40,8 +37,7 @@ export class NewsComponent implements OnInit, AfterViewInit {
 
   animateIn() {
     const newsElms = this.newsEl.nativeElement.querySelectorAll(".news");
-    console.log(newsElms);
-    this.tl.set(newsElms, { autoAlpha: 0, y: 20 });
+    this.tl.set(newsElms, { autoAlpha: 1, y: 20 });
     this.tl.staggerTo(newsElms, 0.6, {
       autoAlpha: 1,
       y: 0,
