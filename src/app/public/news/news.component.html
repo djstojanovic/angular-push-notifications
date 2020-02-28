@@ -1,0 +1,11 @@
+<div class="container" #newsEl>
+    <h1 class="underlined">NEWS</h1>
+    <div class="news" *ngFor="let item of news">
+        <div class="image">
+            <img src="{{item.src}}">
+        </div>
+        <p class="date">{{item.date}}</p>
+        <h4>{{item.title}}</h4>
+        <div class="item-footer">LEARN MORE <span>&#62;</span></div>
+    </div>
+</div>
